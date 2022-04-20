@@ -1,7 +1,9 @@
 [
   {
     "class_title": "Rugby Basics",
-    "instructor": "Cobus Reinach",
+    "instructor_name": "Cobus Reinach",
+    "instructor_title": "Professional Ruugby Union Player",
+    "instructor_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudindolor sit amet, consectetur adipiscing elit. Quisque condimentum duieget lacinia pellentesque. Nulla rhoncus at est ac sollicitudin. Sed quis egestas sapien. Nam dignissim.",
     "overview": {
       "lesson_amount": 6,
       "class_hrs": 3,

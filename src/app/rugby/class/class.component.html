@@ -2,23 +2,13 @@
   <!-- SCROLL UP BUTTON -->
 </div>
 <div class="container">
-  <div class="mobile-display text-white nav-item">
+  <div class="back-btn text-white nav-item">
     <a href="#">
       <i class="nav-icon"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          />
-        </svg>
+        ><img
+          src="../../../assets/icons/browse_filters_left_arrow-arrow_carrot-left.svg"
+          alt=""
+        />
       </i>
       Back
     </a>
@@ -96,13 +86,18 @@
     <div class="content-col-left">
       <div class="content-video">
         <div class="video-player">
-          <video id="video">
+          <!-- <video id="video">
             <source
               src="https://www.w3schools.com/html/mov_bbb.mp4"
               type="video/mp4"
             />
+          </video> -->
+          <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
           </video>
-          <div class="controls">
+          <!-- <div class="controls">
             <button class="play-button control-button">
               <svg
                 width="20px"
@@ -278,7 +273,7 @@
                 </g>
               </svg>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="content-description">
@@ -325,20 +320,18 @@
         <img src="../../../assets/images/cobus_coach_image.png " alt="" />
       </div>
       <div>
-        <p class="instructor-name text-white capitalize">cobus reinach</p>
+        <p class="instructor-name text-white capitalize">
+          {{ classData.instructor_name }}
+        </p>
         <p class="instructor-title text-white uppercase">
-          Professional Rugby Union PLayer
+          {{ classData.instructor_title }}
         </p>
       </div>
     </div>
     <div class="instructor-col-right inline-block">
       <div class="instructor-description">
         <p class="text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin
-          dolor sit amet, consectetur adipiscing elit. Quisque condimentum dui
-          eget lacinia pellentesque. Nulla rhoncus at est ac sollicitudin. Sed
-          quis egestas sapien. Nam dignissim.
+          {{ classData.instructor_desc }}
         </p>
       </div>
     </div>
@@ -381,7 +374,7 @@
             <p class="snapshot-price">
               {{ snapshot.price | currency: "R" }}
             </p>
-            <a href="#" class="btn snapshot-cta-btn">
+            <a href="#" class="snapshot-cta-btn">
               <img
                 src="../../../assets/icons/home_cart_icon_circle.png"
                 alt=""
