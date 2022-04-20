@@ -1,0 +1,477 @@
+<div #target>
+  <!-- SCROLL UP BUTTON -->
+</div>
+<div class="container">
+  <div class="mobile-display text-white nav-item">
+    <a href="#">
+      <i class="nav-icon"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </i>
+      Back
+    </a>
+  </div>
+  <section class="breadcrumbs text-white">
+    <img
+      src="../assets/icons/class_details_home_rugby_masters_logo.svg"
+      alt=""
+    />
+    <span class="text-white breadcrumb-separator">/</span>
+    <a class="text-white" href="#">Browse Clases</a>
+    <span class="text-white breadcrumb-separator">/</span>
+
+    <a class="text-white" href="#">Basic Skills</a>
+    <span class="text-white breadcrumb-separator">/</span>
+
+    <a class="text-white" href="#">Rugby Basics</a>
+  </section>
+
+  <hr />
+  <section class="overview">
+    <div class="overview-image">
+      <img
+        src="../../../assets/images/overview_image.png"
+        alt="rugby player holding ball grass boots"
+      />
+    </div>
+    <div class="overview-description-text">
+      <p class="h1 text-white">{{ classData.class_title }}</p>
+      <p class="h2 text-white">Taught by {{ classData.instructor }}</p>
+      <p class="f-14 text-white uppercase">
+        {{ classData.overview.lesson_amount }} lessons -
+        {{ classData.overview.class_hrs }} hours,
+        {{ classData.overview.class_mins }}mins
+      </p>
+      <div class="overview-snapshots">
+        <button class="btn overview-snapshot-btn secondary-btn capitalize">
+          {{ availableSnapshots }} snapshots available
+        </button>
+        <div>
+          <img
+            id="myDIV"
+            class="snapshot-details-icon"
+            src="../../../assets/icons/class_details_i_icon-ic_info.png"
+            alt=""
+          />
+          <p class="snapshot-hidden snapshot-hover hide text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, dolorem quae, beatae esse quos officiis aspernatur
+            commodi odit impedit assumenda molestias rerum ullam?
+          </p>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <div class="overview-col-right">
+      <div class="overview-cart">
+        <p class="h2 text-white inline-block">R1550.00</p>
+        <button class="text-white btn btn-primary">Add to Cart</button>
+      </div>
+      <div class="categories">
+        <ul>
+          <!-- <li class="category capitalize inline-block text-white">
+            basic skills
+          </li>
+          <li class="category capitalize inline-block text-white">Coaching</li>
+          <li class="category capitalize inline-block text-white">
+            Techniques
+          </li> -->
+          <li
+            *ngFor="let category of classData.overview.categories"
+            class="category capitalize inline-block text-white"
+          >
+            {{ category }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section class="content">
+    <div class="content-col-left">
+      <div class="content-video">
+        <div class="video-player">
+          <video id="video">
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="controls">
+            <button class="play-button control-button">
+              <svg
+                width="20px"
+                height="19px"
+                viewBox="0 0 20 19"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <linearGradient
+                    x1="49.2680251%"
+                    y1="143.877475%"
+                    x2="49.6378782%"
+                    y2="-75.6690145%"
+                    id="linearGradient-1"
+                  >
+                    <stop stop-color="#E15B11" offset="0%"></stop>
+                    <stop stop-color="#EB9845" offset="54%"></stop>
+                    <stop stop-color="#EF7D3F" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <g
+                  id="Desktop-UI"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Class-Overview"
+                    transform="translate(-134.000000, -954.000000)"
+                  >
+                    <g
+                      id="class_details_video_pause_icon"
+                      transform="translate(134.000000, 954.000000)"
+                    >
+                      <rect
+                        id="Rectangle"
+                        x="0.5"
+                        y="0"
+                        width="19"
+                        height="19"
+                      ></rect>
+                      <polygon
+                        id="Path"
+                        fill="url(#linearGradient-1)"
+                        fill-rule="nonzero"
+                        points="9 3 5 3 5 16 9 16"
+                      ></polygon>
+                      <polygon
+                        id="Path"
+                        fill="url(#linearGradient-1)"
+                        fill-rule="nonzero"
+                        points="11 16 15 16 15 3 11 3"
+                      ></polygon>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button class="sound-button control-button">
+              <svg
+                width="27px"
+                height="27px"
+                viewBox="0 0 27 27"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  id="Desktop-UI"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Class-Overview"
+                    transform="translate(-188.000000, -950.000000)"
+                  >
+                    <g
+                      id="class_details_video_volume_icon"
+                      transform="translate(188.000000, 950.000000)"
+                    >
+                      <rect
+                        id="Rectangle"
+                        x="0"
+                        y="0"
+                        width="27"
+                        height="27"
+                      ></rect>
+                      <path
+                        d="M25,13 C25,17.4183 21.4183,21 17,21 L17,19 C20.3137,19 23,16.3137 23,13 C23,9.68629 20.3137,7 17,7 L17,5 C21.4183,5 25,8.58172 25,13 Z"
+                        id="Path"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"
+                      ></path>
+                      <path
+                        d="M21,13 C21,15.2091 19.2091,17 17,17 L17,15 C18.1046,15 19,14.1046 19,13 C19,11.8954 18.1046,11 17,11 L17,9 C19.2091,9 21,10.79086 21,13 Z"
+                        id="Path"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"
+                      ></path>
+                      <path
+                        d="M10,17 L16,21 L16,5 L10,9 L6,9 C3.79086,9 2,10.79086 2,13 C2,15.2091 3.79086,17 6,17 L10,17 Z M6,11 L10,11 L14,8.5 L14,17.5 L10,15 L6,15 C4.89543,15 4,14.1046 4,13 C4,11.8954 4.89543,11 6,11 Z"
+                        id="Shape"
+                        fill="#FFFFFF"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <input type="range" min="0" max="100" class="timeline" value="0" />
+            <button class="control-button fullscreen-button">
+              <svg
+                width="19px"
+                height="16px"
+                viewBox="0 0 19 16"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M2.5,10.1666667 L0.333333333,10.1666667 L0.333333333,15.5833333 L5.75,15.5833333 L5.75,13.4166667 L2.5,13.4166667 L2.5,10.1666667 L2.5,10.1666667 Z M0.333333333,5.83333333 L2.5,5.83333333 L2.5,2.58333333 L5.75,2.58333333 L5.75,0.416666667 L0.333333333,0.416666667 L0.333333333,5.83333333 L0.333333333,5.83333333 Z M16.5833333,13.4166667 L13.3333333,13.4166667 L13.3333333,15.5833333 L18.75,15.5833333 L18.75,10.1666667 L16.5833333,10.1666667 L16.5833333,13.4166667 L16.5833333,13.4166667 Z M13.3333333,0.416666667 L13.3333333,2.58333333 L16.5833333,2.58333333 L16.5833333,5.83333333 L18.75,5.83333333 L18.75,0.416666667 L13.3333333,0.416666667 L13.3333333,0.416666667 Z"
+                    id="path-1"
+                  ></path>
+                  <rect
+                    id="path-3"
+                    x="0"
+                    y="0"
+                    width="54.1666667"
+                    height="54.1666667"
+                  ></rect>
+                </defs>
+                <g
+                  id="Desktop-UI"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Class-Overview"
+                    transform="translate(-881.000000, -955.000000)"
+                  >
+                    <g
+                      id="video_full_screen_icon"
+                      transform="translate(881.000000, 955.000000)"
+                    >
+                      <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                      </mask>
+                      <g id="Mask"></g>
+                      <g id="🎨-Color" mask="url(#mask-2)">
+                        <g transform="translate(-18.083333, -19.083333)">
+                          <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                          </mask>
+                          <use
+                            id="Black"
+                            stroke="none"
+                            fill="#FFFFFF"
+                            fill-rule="evenodd"
+                            xlink:href="#path-3"
+                          ></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content-description">
+        <p class="paragraph f-14 text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin
+          dolor sit amet, consectetur adipiscing elit. Quisque condimentum dui
+          eget lacinia pellentesque. Nulla rhoncus at est ac sollicitudin. Sed
+          quis egestas sapien. Nam dignissim posuere rutrum. Nunc suscipit
+          posuere felis eu maximus. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra.
+        </p>
+      </div>
+    </div>
+    <div class="content-col-right">
+      <ejs-accordion expandMode="Single">
+        <e-accordionitems>
+          <e-accordionitem
+            *ngFor="let accordion of accordionData; let indexOfelement = index"
+            [expanded]="indexOfelement === 0"
+          >
+            <ng-template #header>
+              <div>{{ indexOfelement + 1 }}. {{ accordion.title }}</div>
+              <button
+                *ngIf="accordion.snapshot === true"
+                class="btn btn-accordion-snapshot capitalize"
+              >
+                snapshots available
+              </button>
+            </ng-template>
+            <ng-template #content>
+              <div>
+                {{ accordion.desc }}
+              </div>
+            </ng-template>
+          </e-accordionitem>
+        </e-accordionitems>
+      </ejs-accordion>
+    </div>
+  </section>
+  <section class="instructor-overview">
+    <div class="instructor-col-left inline-block">
+      <div class="instructor-img">
+        <img src="../../../assets/images/cobus_coach_image.png " alt="" />
+      </div>
+      <div>
+        <p class="instructor-name text-white capitalize">cobus reinach</p>
+        <p class="instructor-title text-white uppercase">
+          Professional Rugby Union PLayer
+        </p>
+      </div>
+      <!-- <div class="instructor-title">
+      </div> -->
+    </div>
+    <div class="instructor-col-right inline-block">
+      <div class="instructor-description">
+        <p class="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin
+          dolor sit amet, consectetur adipiscing elit. Quisque condimentum dui
+          eget lacinia pellentesque. Nulla rhoncus at est ac sollicitudin. Sed
+          quis egestas sapien. Nam dignissim.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<section class="cta-banner">
+  <div class="cta-col-left">
+    <p class="cta-title text-white">Ready to go?</p>
+    <p class="cta-subtitle text-white">
+      Purchase this class in just a few clicks
+    </p>
+  </div>
+  <div class="cta-col-right">
+    <button class="cta-button text-white btn cta-button">Add to Cart</button>
+  </div>
+</section>
+<div class="container">
+  <section class="snapshots">
+    <p class="h1 text-white">Snapshots</p>
+    <p class="sub-heading text-white">
+      Purchase individual lessons from this Master Class
+    </p>
+    <div class="snapshot-cards">
+      <div
+        *ngFor="let snapshot of snapshots"
+        class="snapshot-card inline-block"
+      >
+        <div class="snapshot-img">
+          <!-- <img
+            src="../../../assets/images/home_snapshots_image@1x.png"
+            alt=""
+          /> -->
+          <img src="{{ snapshot.image_url }}" alt="" />
+          <button class="btn secondary-btn"></button>
+        </div>
+        <div class="snapshot-content">
+          <a href="#" class="snapshot-title sub-heading underline text-dark"
+            >{{ snapshot.title }} with {{ snapshot.instructor }}
+          </a>
+          <p class="snapshot-description text-dark">
+            {{ snapshot.desc }}
+          </p>
+          <div class="snapshot-cart">
+            <p class="snapshot-price">
+              {{ snapshot.price | currency: "R" }}
+            </p>
+            <a href="#" class="btn snapshot-cta-btn">
+              <img
+                src="../../../assets/icons/home_cart_icon_circle.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="container mobile-display">
+  <div class="back-to-top" (click)="scrollToTop(target)">
+    <img src="../../../assets/icons/Mobile_back_to_top_icon.svg" alt="" />
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-col-left">
+      <img
+        class="footer-logo"
+        src="../../../assets/images/footer_rugby_masters_logo.png"
+        alt=""
+      />
+      <ul class="footer-list">
+        <li>
+          <a class="footer-list-item text-dark sub-heading" href="#">Home</a>
+        </li>
+        <li>
+          <a class="footer-list-item text-dark sub-heading" href="#"
+            >Browse Classes</a
+          >
+        </li>
+        <li>
+          <a class="footer-list-item text-dark sub-heading" href="#"
+            >Create an Account</a
+          >
+        </li>
+        <li>
+          <a class="footer-list-item text-dark sub-heading" href="#"
+            >Terms & Conditions</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer-col-right">
+      <p class="text-dak f-18">Get in touch</p>
+      <div class="social-media">
+        <a href="#">
+          <img
+            class="social-media-icon inline-block"
+            src="../../../assets/icons/footer_facebook_icon.svg"
+            alt=""
+        /></a>
+
+        <a href="#"
+          ><img
+            class="social-media-icon inline-block"
+            src="../../../assets/icons/footer_instagram_icon.svg"
+            alt=""
+        /></a>
+        <a href="#"
+          ><img
+            class="social-media-icon inline-block"
+            src="../../../assets/icons/footer_twitter_icon.svg"
+            alt=""
+        /></a>
+      </div>
+      <a
+        class="footer-email text-dark f-16"
+        href="mailto:hello@rugbymasters.co.za"
+        >hello@rugbymasters.co.za</a
+      >
+    </div>
+  </div>
+  <div class="bottom-footer">
+    <p class="text-white">Copyright Rugby Masters 2020, All Rights Reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,112 @@
+<header>
+  <nav>
+    <!-- DESKTOP -->
+    <div class="desktop-nav">
+      <div class="nav-col-left inline-block">
+        <div class="logo inline-block">
+          <img src="../../../assets/images/logo.svg" alt="" />
+        </div>
+        <div class="nav-item mobile-hidden"><a href="#">Browse Classes</a></div>
+        <div class="nav-item mobile-display">
+          <a href="#" class="text-white">
+            <i class="nav-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </i>
+            Search
+          </a>
+        </div>
+      </div>
+      <div class="nav-col-right mobile-hidden">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="#">
+              <i class="nav-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </i>
+              Search
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <i class="nav-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </i>
+              Cart
+            </a>
+          </li>
+          <li class="nav-item"><a href="#"> Log in</a></li>
+          <button class="nav-item text-white btn btn-primary">Sign Up</button>
+        </ul>
+      </div>
+
+      <!-- MOBILE FULLSCREEN MENU -->
+
+      <div class="mobile-display">
+        <button class="btn" (click)="openNav()">
+          <img src="../../../assets/icons/mobile_menu_icon.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div id="myNav" class="overlay" [ngClass]="bntStyle">
+      <div class="overlay-icons">
+        <img src="../../../assets/images/mobile_nav_logo.svg" alt="" />
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
+          ><img src="../../../assets/icons/mobile_nav_close_icon.svg" alt=""
+        /></a>
+      </div>
+
+      <div class="overlay-content">
+        <a class="mobile-nav-item" href="#">Browse Classes</a>
+        <a class="mobile-nav-item" href="#">
+          <i class="mobile-nav-icon"
+            ><img src="../../../assets/icons/mobile_nav_cart_icon.svg" alt="" />
+          </i>
+          Cart
+        </a>
+        <a class="mobile-nav-item" href="#">Log In</a>
+        <button class="btn btn-primary text-white btn-mobile-nav">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>

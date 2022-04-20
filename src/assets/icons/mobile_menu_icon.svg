@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E984A565-0AEE-4CF6-A1D8-56B95E51CBE7</title>
+    <defs>
+        <linearGradient x1="46.9200132%" y1="100%" x2="46.9200132%" y2="-21.6986195%" id="linearGradient-1">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="74.5571696%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.9200132%" y1="100%" x2="46.9200132%" y2="-21.6986195%" id="linearGradient-2">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="74.5571696%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.9200132%" y1="100%" x2="46.9200132%" y2="-21.6986195%" id="linearGradient-3">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="74.5571696%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Mobile-UI-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Class-Details" transform="translate(-362.000000, -65.000000)">
+            <g id="Mobile-Nav-UI" transform="translate(0.000000, 38.000000)">
+                <g id="mobile_menu_icon" transform="translate(362.000000, 27.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                    <path d="M31.6705882,25.9920549 C31.6705882,26.7524426 31.0540875,27.3689433 30.2936998,27.3689433 L19.2121826,27.3689433 C18.4517948,27.3689433 17.8352941,26.7524426 17.8352941,25.9920549 C17.8352941,25.2316671 18.4517948,24.6151664 19.2121826,24.6151664 L30.2936998,24.6151664 C31.0540875,24.6151664 31.6705882,25.2316671 31.6705882,25.9920549 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                    <path d="M31.6705882,17.6843956 C31.6705882,18.4449217 31.0540875,19.061284 30.2936998,19.061284 L5.37687464,19.061284 C4.61644536,19.061284 4,18.4449217 4,17.6843956 C4,16.9240078 4.61644536,16.3076455 5.37687464,16.3076455 L30.2936998,16.3076455 C31.0540875,16.3076455 31.6705882,16.9240078 31.6705882,17.6843956 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                    <path d="M30.2936998,10.7537631 C31.0540875,10.7537631 31.6705882,10.1373039 31.6705882,9.37687464 C31.6705882,8.61644536 31.0540875,8 30.2936998,8 L13.6780511,8 C12.9176218,8 12.3011765,8.61644536 12.3011765,9.37687464 C12.3011765,10.1373039 12.9176218,10.7537631 13.6780511,10.7537631 L30.2936998,10.7537631 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

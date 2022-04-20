@@ -1,0 +1,76 @@
+[
+  {
+    "class_title": "Rugby Basics",
+    "instructor": "Cobus Reinach",
+    "overview": {
+      "lesson_amount": 6,
+      "class_hrs": 3,
+      "class_mins": 27,
+      "categories": ["Basic Skills", "Tackling", "Techniques", "Coaching"]
+    },
+    "accordion": [
+      {
+        "title": "Introduction",
+        "desc": "Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "snapshot": true
+      },
+      {
+        "title": "On-Field Decision Making",
+        "desc": "Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "snapshot": false
+      },
+      {
+        "title": "Line throw in",
+        "desc": "Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "snapshot": true
+      },
+      {
+        "title": "Coaching Decision Making",
+        "desc": "Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "snapshot": true
+      },
+      {
+        "title": "Comeback strategies",
+        "desc": "Nam dignissim posuere rutrum. Nunc suscipit posuere felis eu maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "snapshot": false
+      }
+    ],
+    "snapshots": [
+      {
+        "title": "Tackling under pressure",
+        "instructor": "Cobus Van Wyk",
+        "image_url": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/7/2018/12/MAINGettyImages-1046650594_239513531_370405281.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin…",
+        "price": 390,
+        "duration_seconds": 2911
+      },
+      {
+        "title": "Passing on the offense pressure",
+        "instructor": "Elton Jantjies",
+
+        "image_url": "https://cdn.mos.cms.futurecdn.net/xvMebWwDChM3VTx3H4T7s7.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin…",
+        "price": 278,
+        "duration_seconds": 2311
+      },
+      {
+        "title": "Drop kicking to gain field",
+        "instructor": "Elton Jantjies",
+
+        "image_url": "https://resources.world.rugby/photo-resources/2020/04/21/655bdcd8-d7f1-42f5-b1b5-be81a6ff2540/GettyImages-1230346.jpg?width=550&height=367",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin…",
+        "price": 890,
+        "duration_seconds": 3911
+      },
+      {
+        "title": "Throw in like a pro",
+        "instructor": "Naas Botha",
+
+        "image_url": "https://lh3.googleusercontent.com/t3Ev10Aq2EIwlWGHFVmk0mJBjvvX-2mkoYWFYRodX3BWK3zKuUzfDkHOsVEpIU3IFj5Y9kM54Bj_kPsIeDxcB2VtX_1_Wz7n15A=s750",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat in elit eget malesuada. Aenean laoreet sem vel sollicitudin…",
+        "price": 540,
+        "duration_seconds": 1911
+      }
+    ]
+  }
+]

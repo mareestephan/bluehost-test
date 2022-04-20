@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>701F4598-484F-43A7-9BFC-5041EF34206C</title>
+    <g id="Mobile-UI-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Class-Details" transform="translate(-327.000000, -3114.000000)" fill-rule="nonzero">
+            <g id="Mobile_back_to_top_icon" transform="translate(354.000000, 3141.000000) scale(1, -1) translate(-354.000000, -3141.000000) translate(327.000000, 3114.000000)">
+                <path d="M27,0 C12.0883173,0 0,12.0883173 0,27 C0,41.9116091 12.0883173,54 27,54 C41.9116091,54 54,41.9116091 54,27 C54,12.0883173 41.9116091,0 27,0 Z M49.0909091,27 C49.0909091,14.7995345 39.2005636,4.90909091 27,4.90909091 C14.7995345,4.90909091 4.90909091,14.7995345 4.90909091,27 C4.90909091,39.2005636 14.7995345,49.0909091 27,49.0909091 C39.2005636,49.0909091 49.0909091,39.2005636 49.0909091,27 Z" id="Shape"></path>
+                <polygon id="icon_back_to_top" fill="#141630" transform="translate(27.000000, 27.500000) rotate(90.000000) translate(-27.000000, -27.500000) " points="23.5000557 17 34 27.4998886 23.5000557 38 20 34.5000454 27.0000371 27.4998886 20 20.4999794"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

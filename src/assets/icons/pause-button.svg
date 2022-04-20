@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A9874C21-E6F4-4552-8DE5-E40B028BC7E0</title>
+    <defs>
+        <linearGradient x1="49.2680251%" y1="143.877475%" x2="49.6378782%" y2="-75.6690145%" id="linearGradient-1">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="54%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Class-Overview" transform="translate(-134.000000, -954.000000)">
+            <g id="class_details_video_pause_icon" transform="translate(134.000000, 954.000000)">
+                <rect id="Rectangle" x="0.5" y="0" width="19" height="19"></rect>
+                <polygon id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero" points="9 3 5 3 5 16 9 16"></polygon>
+                <polygon id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero" points="11 16 15 16 15 3 11 3"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
