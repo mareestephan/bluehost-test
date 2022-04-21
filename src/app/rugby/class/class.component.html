@@ -21,13 +21,10 @@
     <span class="text-white breadcrumb-separator">/</span>
     <a class="text-white" href="#">Browse Clases</a>
     <span class="text-white breadcrumb-separator">/</span>
-
     <a class="text-white" href="#">Basic Skills</a>
     <span class="text-white breadcrumb-separator">/</span>
-
     <a class="text-white" href="#">Rugby Basics</a>
   </section>
-
   <hr />
   <section class="overview">
     <div class="overview-image">
@@ -38,7 +35,7 @@
     </div>
     <div class="overview-description-text">
       <p class="h1 text-white">{{ classData.class_title }}</p>
-      <p class="h2 text-white">Taught by {{ classData.instructor }}</p>
+      <p class="h2 text-white">Taught by {{ classData.instructor_name }}</p>
       <p class="f-14 text-white uppercase">
         {{ classData.overview.lesson_amount }} lessons -
         {{ classData.overview.class_hrs }} hours,
@@ -86,194 +83,63 @@
     <div class="content-col-left">
       <div class="content-video">
         <div class="video-player">
-          <!-- <video id="video">
-            <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              type="video/mp4"
-            />
-          </video> -->
-          <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4" />
-            <source src="movie.ogg" type="video/ogg" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <div class="controls">
-            <button class="play-button control-button">
-              <svg
-                width="20px"
-                height="19px"
-                viewBox="0 0 20 19"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <defs>
-                  <linearGradient
-                    x1="49.2680251%"
-                    y1="143.877475%"
-                    x2="49.6378782%"
-                    y2="-75.6690145%"
-                    id="linearGradient-1"
-                  >
-                    <stop stop-color="#E15B11" offset="0%"></stop>
-                    <stop stop-color="#EB9845" offset="54%"></stop>
-                    <stop stop-color="#EF7D3F" offset="100%"></stop>
-                  </linearGradient>
-                </defs>
-                <g
-                  id="Desktop-UI"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
+          <div class="video-player-wrapper">
+            <vg-player>
+              <vg-overlay-play></vg-overlay-play>
+              <vg-buffering></vg-buffering>
+              <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+              </vg-scrub-bar>
+              <vg-controls>
+                <vg-play-pause
+                  ><img src="../../../assets/icons/cart.svg" alt=""
+                /></vg-play-pause>
+                <vg-mute></vg-mute>
+                <vg-time-display
+                  vgProperty="current"
+                  vgFormat="mm:ss"
+                ></vg-time-display
+                ><span
+                  style="display: flex; align-items: center"
+                  class="text-white"
+                  >/</span
                 >
-                  <g
-                    id="Class-Overview"
-                    transform="translate(-134.000000, -954.000000)"
-                  >
-                    <g
-                      id="class_details_video_pause_icon"
-                      transform="translate(134.000000, 954.000000)"
-                    >
-                      <rect
-                        id="Rectangle"
-                        x="0.5"
-                        y="0"
-                        width="19"
-                        height="19"
-                      ></rect>
-                      <polygon
-                        id="Path"
-                        fill="url(#linearGradient-1)"
-                        fill-rule="nonzero"
-                        points="9 3 5 3 5 16 9 16"
-                      ></polygon>
-                      <polygon
-                        id="Path"
-                        fill="url(#linearGradient-1)"
-                        fill-rule="nonzero"
-                        points="11 16 15 16 15 3 11 3"
-                      ></polygon>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <button class="sound-button control-button">
-              <svg
-                width="27px"
-                height="27px"
-                viewBox="0 0 27 27"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
+                <vg-time-display
+                  vgProperty="total"
+                  vgFormat="mm:ss"
+                ></vg-time-display>
+                <vg-scrub-bar style="pointer-events: none"></vg-scrub-bar>
+                <vg-fullscreen></vg-fullscreen>
+              </vg-controls>
+              <video
+                [vgMedia]="$any(media)"
+                #media
+                id="singleVideo"
+                preload="auto"
+                crossorigin
               >
-                <g
-                  id="Desktop-UI"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Class-Overview"
-                    transform="translate(-188.000000, -950.000000)"
-                  >
-                    <g
-                      id="class_details_video_volume_icon"
-                      transform="translate(188.000000, 950.000000)"
-                    >
-                      <rect
-                        id="Rectangle"
-                        x="0"
-                        y="0"
-                        width="27"
-                        height="27"
-                      ></rect>
-                      <path
-                        d="M25,13 C25,17.4183 21.4183,21 17,21 L17,19 C20.3137,19 23,16.3137 23,13 C23,9.68629 20.3137,7 17,7 L17,5 C21.4183,5 25,8.58172 25,13 Z"
-                        id="Path"
-                        fill="#FFFFFF"
-                        fill-rule="nonzero"
-                      ></path>
-                      <path
-                        d="M21,13 C21,15.2091 19.2091,17 17,17 L17,15 C18.1046,15 19,14.1046 19,13 C19,11.8954 18.1046,11 17,11 L17,9 C19.2091,9 21,10.79086 21,13 Z"
-                        id="Path"
-                        fill="#FFFFFF"
-                        fill-rule="nonzero"
-                      ></path>
-                      <path
-                        d="M10,17 L16,21 L16,5 L10,9 L6,9 C3.79086,9 2,10.79086 2,13 C2,15.2091 3.79086,17 6,17 L10,17 Z M6,11 L10,11 L14,8.5 L14,17.5 L10,15 L6,15 C4.89543,15 4,14.1046 4,13 C4,11.8954 4.89543,11 6,11 Z"
-                        id="Shape"
-                        fill="#FFFFFF"
-                      ></path>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <input type="range" min="0" max="100" class="timeline" value="0" />
-            <button class="control-button fullscreen-button">
-              <svg
-                width="19px"
-                height="16px"
-                viewBox="0 0 19 16"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <defs>
-                  <path
-                    d="M2.5,10.1666667 L0.333333333,10.1666667 L0.333333333,15.5833333 L5.75,15.5833333 L5.75,13.4166667 L2.5,13.4166667 L2.5,10.1666667 L2.5,10.1666667 Z M0.333333333,5.83333333 L2.5,5.83333333 L2.5,2.58333333 L5.75,2.58333333 L5.75,0.416666667 L0.333333333,0.416666667 L0.333333333,5.83333333 L0.333333333,5.83333333 Z M16.5833333,13.4166667 L13.3333333,13.4166667 L13.3333333,15.5833333 L18.75,15.5833333 L18.75,10.1666667 L16.5833333,10.1666667 L16.5833333,13.4166667 L16.5833333,13.4166667 Z M13.3333333,0.416666667 L13.3333333,2.58333333 L16.5833333,2.58333333 L16.5833333,5.83333333 L18.75,5.83333333 L18.75,0.416666667 L13.3333333,0.416666667 L13.3333333,0.416666667 Z"
-                    id="path-1"
-                  ></path>
-                  <rect
-                    id="path-3"
-                    x="0"
-                    y="0"
-                    width="54.1666667"
-                    height="54.1666667"
-                  ></rect>
-                </defs>
-                <g
-                  id="Desktop-UI"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Class-Overview"
-                    transform="translate(-881.000000, -955.000000)"
-                  >
-                    <g
-                      id="video_full_screen_icon"
-                      transform="translate(881.000000, 955.000000)"
-                    >
-                      <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                      </mask>
-                      <g id="Mask"></g>
-                      <g id="🎨-Color" mask="url(#mask-2)">
-                        <g transform="translate(-18.083333, -19.083333)">
-                          <mask id="mask-4" fill="white">
-                            <use xlink:href="#path-3"></use>
-                          </mask>
-                          <use
-                            id="Black"
-                            stroke="none"
-                            fill="#FFFFFF"
-                            fill-rule="evenodd"
-                            xlink:href="#path-3"
-                          ></use>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </button>
-          </div> -->
+                <source
+                  src="../../../assets/videos/Springboks.mp4"
+                  type="video/mp4"
+                />
+
+                <track
+                  kind="subtitles"
+                  label="English"
+                  src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt"
+                  srclang="en"
+                  default
+                />
+                <track
+                  kind="subtitles"
+                  label="Español"
+                  src="http://static.videogular.com/assets/subs/pale-blue-dot-es.vtt"
+                  srclang="es"
+                />
+              </video>
+            </vg-player>
+          </div>
         </div>
       </div>
       <div class="content-description">
@@ -391,67 +257,4 @@
     <img src="../../../assets/icons/Mobile_back_to_top_icon.svg" alt="" />
   </div>
 </div>
-
-<footer>
-  <div class="footer-top">
-    <div class="footer-col-left">
-      <img
-        class="footer-logo"
-        src="../../../assets/images/footer_rugby_masters_logo.png"
-        alt=""
-      />
-      <ul class="footer-list">
-        <li>
-          <a class="footer-list-item text-dark sub-heading" href="#">Home</a>
-        </li>
-        <li>
-          <a class="footer-list-item text-dark sub-heading" href="#"
-            >Browse Classes</a
-          >
-        </li>
-        <li>
-          <a class="footer-list-item text-dark sub-heading" href="#"
-            >Create an Account</a
-          >
-        </li>
-        <li>
-          <a class="footer-list-item text-dark sub-heading" href="#"
-            >Terms & Conditions</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="footer-col-right">
-      <p class="text-dak f-18">Get in touch</p>
-      <div class="social-media">
-        <a href="#">
-          <img
-            class="social-media-icon inline-block"
-            src="../../../assets/icons/footer_facebook_icon.svg"
-            alt=""
-        /></a>
-
-        <a href="#"
-          ><img
-            class="social-media-icon inline-block"
-            src="../../../assets/icons/footer_instagram_icon.svg"
-            alt=""
-        /></a>
-        <a href="#"
-          ><img
-            class="social-media-icon inline-block"
-            src="../../../assets/icons/footer_twitter_icon.svg"
-            alt=""
-        /></a>
-      </div>
-      <a
-        class="footer-email text-dark f-16"
-        href="mailto:hello@rugbymasters.co.za"
-        >hello@rugbymasters.co.za</a
-      >
-    </div>
-  </div>
-  <div class="bottom-footer">
-    <p class="text-white">Copyright Rugby Masters 2020, All Rights Reserved.</p>
-  </div>
-</footer>
+<app-footer></app-footer>
