@@ -871,6 +871,10 @@ footer {
     grid-template-columns: none;
     .overview-image {
       grid-area: img;
+      img {
+        width: 104px;
+        padding-bottom: 20px;
+      }
     }
 
     .overview-description-text {
@@ -894,6 +898,8 @@ footer {
         }
         button {
           float: right;
+          height: 56px;
+          margin-bottom: 20px;
         }
       }
       .categories {
@@ -1051,3 +1057,25 @@ footer {
     }
   }
 }
+// @media only screen and (max-width: 380px) {
+//   .overview {
+//     padding: 51px 0px 0px 0px;
+//     display: grid;
+//     grid-template-areas:
+//       "img "
+//       "desc "
+//       "cart";
+//     grid-template-columns: none;
+
+//     .overview-col-right {
+//       display: flex;
+//       margin-left: 0px;
+//       margin-right: auto;
+//       padding-top: 20px;
+//       .overview-cart {
+//         display: flex;
+//         flex-direction: column;
+//       }
+//     }
+//   }
+// }
